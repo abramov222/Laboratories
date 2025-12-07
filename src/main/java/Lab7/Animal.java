@@ -1,4 +1,6 @@
 package Lab7;
 
-public class Animal {
+public interface Animal {
+    void move();
+    String getName();
 }

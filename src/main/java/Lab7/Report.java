@@ -1,4 +1,6 @@
 package Lab7;
 
-public class Report {
+public interface Report {
+    void generate();
+    String getType();
 }
