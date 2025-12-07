@@ -1,4 +1,5 @@
 package Lab8;
 
-public class Workable {
+public interface Workable {
+    void work();
 }

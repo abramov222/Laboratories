@@ -1,4 +1,6 @@
 package Lab8;
 
-public class Designer {
+public interface Designer {
+    void designUI();
+    void createMockups();
 }

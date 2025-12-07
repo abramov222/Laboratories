@@ -1,4 +1,6 @@
 package Lab8;
 
-public class Coder {
+public interface Coder {
+    void code();
+    void reviewCode();
 }

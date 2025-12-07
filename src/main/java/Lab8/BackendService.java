@@ -1,4 +1,6 @@
 package Lab8;
 
-public class BackendService {
+public interface BackendService {
+    void processRequest();
+    String getData();
 }
