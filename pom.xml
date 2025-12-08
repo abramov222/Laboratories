@@ -36,7 +36,7 @@
 
     <build>
         <plugins>
-            <!-- Компилятор -->
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -47,24 +47,23 @@
                 </configuration>
             </plugin>
 
-            <!-- Плагин для запуска через javafx:run -->
+
             <plugin>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
                 <configuration>
-                    <!-- По умолчанию запускает калькулятор -->
+
                     <mainClass>com.calculator.CalculatorApp</mainClass>
                 </configuration>
             </plugin>
 
-            <!-- Плагин для запуска через exec:java -->
+
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.1.0</version>
                 <executions>
-                    <!-- Для запуска калькулятора: mvn exec:java@run-calculator -->
                     <execution>
                         <id>run-calculator</id>
                         <goals>
@@ -74,7 +73,7 @@
                             <mainClass>com.calculator.CalculatorApp</mainClass>
                         </configuration>
                     </execution>
-                    <!-- Для запуска геометрии: mvn exec:java@run-geometry -->
+
                     <execution>
                         <id>run-geometry</id>
                         <goals>
